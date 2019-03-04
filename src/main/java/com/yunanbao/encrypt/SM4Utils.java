@@ -49,7 +49,7 @@ public class SM4Utils
 			ctx.setMode(SM4.SM4_DECRYPT);
 			SM4 sm4 = new SM4();
 			sm4.sm4SetkeyDec(ctx, secretKey);
-			System.out.println("key is :"+Util.printHexFromByte(secretKey));
+			// System.out.println("key is :"+Util.printHexFromByte(secretKey));
 			return sm4.sm4CryptCbc(ctx, iv, cipherText);
 		}
 		catch (Exception e)
