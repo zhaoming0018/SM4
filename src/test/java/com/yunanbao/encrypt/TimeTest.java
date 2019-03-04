@@ -43,8 +43,8 @@ public class TimeTest {
                 //System.out.println(Util.printHexFromByte(decoded));
                 //System.out.println();
             }
-            System.out.println("encodeTime: "+String.valueOf(encodeTime)+" ns");
-            System.out.println("decodeTime: "+String.valueOf(decodeTime)+" ns");
+            System.out.println("encodeTime: "+String.valueOf((double) encodeTime / 1e6)+" ms");
+            System.out.println("decodeTime: "+String.valueOf(decodeTime / 1e6)+" ms");
 
         }
     }
